@@ -3,6 +3,8 @@ This is a test repo that may potentially be the frontend of [Alexandria](https:/
 
 [![Join the chat at https://gitter.im/alexandrialibrary/Alexandria](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexandrialibrary/Alexandria?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Codacy Badge](https://www.codacy.com/project/badge/b62c23efe3204e4d81532806eef62374)](https://www.codacy.com/app/alexandria/alexandria-frontend)
+
 ##Usage
 To test the site locally you will need a simple server. Conveniently, there is a Node.js project called [Simple Server](https://github.com/balupton/simple-server) that does just this.
 

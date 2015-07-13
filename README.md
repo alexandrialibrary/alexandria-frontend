@@ -17,4 +17,4 @@ $ npm install -g simple-server
 ```shell
 $ simple-server ./ 3000
 ```
-The project will now be available at [`http://localhost:3000/index.html`](http://localhost:3000/index.html).
+This will make the project available at [`http://localhost:3000/index.html`](http://localhost:3000/index.html).

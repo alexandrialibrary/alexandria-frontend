@@ -1,3 +1,56 @@
+/*
+
+	styles for Alexandria
+	based on the Google Material Design guidelines
+
+	by Harry Grillo & Hawk Weisman
+	https://github.com/alexandrialibrary
+
+ */
+@import 'colors';
+@import 'material_type';
+
+$font-stack: 'RobotoDraft', 'Roboto', 'Noto', sans-serif;
+
+// Tables
+$table-border-color: lighten($black, 87%);
+
+table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse; 
+}
+
+td, th{
+  padding: 10px 0px;
+  display: table-cell;
+  text-align: left
+}
+
+th, thead {
+    tr {
+        border-bottom: 1px solid $table-border-color;
+    }
+}
+
+thead {
+    font-size: 12px;
+    font-weight: 500;
+    color: lighten($black, 46%);
+}
+
+tbody {
+    font-size: 13px;
+    font-weight: 400;
+    color: lighten($black, 16%);
+}
+
+body {
+     font-family: $font-stack;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-size-adjust: 100%;
+ }
+
 paper-header-panel {
 	paper-toolbar {
 		paper-tabs {

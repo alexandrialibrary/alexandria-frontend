@@ -1,0 +1,39 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../book-service/book-service.html">
+
+<dom-module id="book-list">
+	<style>
+
+	</style>
+
+	<template>
+		<book-service id="service" books="{{books}}"></book-service>
+
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<td>ISBN</td>
+						<td>Title</td>
+						<td>Author</td>
+						<td>Pages</td>
+					</tr>
+				</thead>
+				<tbody>
+				<template is="dom-repeat" items="{{books}}">
+					<tr>
+						<td>{{item.isbn}}</td>
+						<td>{{item.title}}</td>
+						<td>{{item.byline}}</td>
+						<td>{{item.pages}}</td>
+					</tr>
+				</template>
+				</tbody>
+			</table>
+		</div>
+	</template>
+
+	<script>
+	Polymer({is: 'book-list'});
+	</script>
+</dom-module>

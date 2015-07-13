@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="book-service">
+	<style>
+
+	</style>
+
+	<template>
+		<iron-ajax
+		  auto
+		  url="https://alexandria.firebaseio.com/rest/books.json"
+		  handle-as="json"
+		  on-response="booksLoaded"></iron-ajax>
+	</template>
+
+	<script>
+	Polymer({
+		is: 'book-service',
+
+		properties: {
+			books: { type: Array, notify: true, value: function(){return [{title: 'asudniaskd'}]} }
+		},
+
+		created: function(){
+			// this.books = [];
+		},
+
+		booksLoaded: function(request){
+			this.books = request.detail.response;
+		}
+	});
+	</script>
+</dom-module>

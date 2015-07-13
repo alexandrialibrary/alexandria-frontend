@@ -10,7 +10,7 @@
 		<book-service id="service" books="{{books}}"></book-service>
 
 		<div>
-			<table>
+			<table class="bordered">
 				<thead>
 					<tr>
 						<td>ISBN</td>
@@ -22,8 +22,8 @@
 				<tbody>
 				<template is="dom-repeat" items="{{books}}">
 					<tr>
-						<td>{{item.isbn}}</td>
-						<td>{{item.title}}</td>
+						<td><small>{{item.isbn}}</small></td>
+						<td><em>{{item.title}}</em></td>
 						<td>{{item.byline}}</td>
 						<td>{{item.pages}}</td>
 					</tr>

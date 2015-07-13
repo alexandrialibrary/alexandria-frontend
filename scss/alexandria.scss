@@ -13,27 +13,27 @@
 $font-stack: 'RobotoDraft', 'Roboto', 'Noto', sans-serif;
 
 // Tables
-$table-border-color: #E0E0E0;
+$table-border-color: lighten($black, 87%);
 
 table {
     width: 100%;
     display: table;
+    border-collapse: collapse; 
+}
 
-    &.bordered > thead > tr,
-    &.bordered > tbody > tr {
+td, th{
+  padding: 10px 0px;
+  display: table-cell;
+  text-align: left
+}
+
+th, thead {
+    tr {
         border-bottom: 1px solid $table-border-color;
     }
 }
 
-td, th{
-  padding: 15px 5px;
-  display: table-cell;
-  text-align: left;
-  border-radius: 2px;
-}
-
 thead {
-    border-bottom: 1px solid $table-border-color;
     font-size: 12px;
     font-weight: 500;
     color: lighten($black, 46%);
@@ -44,7 +44,6 @@ tbody {
     font-weight: 400;
     color: lighten($black, 16%);
 }
-
 
 body {
      font-family: $font-stack;

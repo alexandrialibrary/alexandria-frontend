@@ -19,14 +19,12 @@
 	</head>
 	<body class="fullbleed" unresolved>
 		<paper-header-panel class="flex">
-			<paper-toolbar>
-				<paper-tabs selected="0">
-				  <paper-tab>Home</paper-tab>
-				  <paper-tab>Catalogue</paper-tab>
-				  <paper-tab>Checkout</paper-tab>
-				</paper-tabs>
-			</paper-toolbar>
-			<div class="content">
+			<paper-tabs selected="0" flex>
+				<paper-tab>Home</paper-tab>
+				<paper-tab>Catalogue</paper-tab>
+			  	<paper-tab>Checkout</paper-tab>
+			</paper-tabs>
+			<div class="content" flex>
 				<paper-material>
 					<book-list></book-list>
 				</paper-material>

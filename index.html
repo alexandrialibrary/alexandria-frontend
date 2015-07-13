@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 	<head>
-
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +9,10 @@
 		<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
 		<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
 		<link rel="import" href="bower_components/iron-pages/iron-pages.html">
+		<link rel="import" href="bower_components/paper-material/paper-material.html">
 		<link rel="import" href="components/book-list.html">
+		<!-- Roboto font family as per Katerial Design guidelines -->
+		<link href="http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/alexandria.css">
 		<script src="js/alexandria.js"></script>
 		<title>Alexandria</title>
@@ -24,8 +26,10 @@
 				  <paper-tab>Checkout</paper-tab>
 				</paper-tabs>
 			</paper-toolbar>
-			<div>
-				<book-list></book-list>
+			<div class="content">
+				<paper-material>
+					<book-list></book-list>
+				</paper-material>
 			</div>
 		</paper-header-panel>
 	</body>

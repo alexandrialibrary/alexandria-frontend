@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "homepage": "https://github.com/alexandrialibrary/alexandria-frontend",
   "authors": [
-    "Harry Grillo <harry@redbassett.com>"
+    "Harry Grillo <harry@redbassett.com>",
+    "Hawk Weisman <hi@hawkweisman.me>"
   ],
   "description": "The frontend for Alexandria.",
   "license": "MIT",

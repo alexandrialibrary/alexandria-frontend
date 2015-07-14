@@ -1,18 +1,18 @@
 /* TEAM */
-	Lead Frontend Developer: Harry Grillo
-	Contact: harry@redbassett.com
-	Twitter: @redbassett
-	From: Maine, USA
+Lead Frontend Developer: Harry Grillo
+Contact: harry@redbassett.com
+Twitter: @redbassett
+From: Maine, USA
 
-	Lead Backend Developer: Hawk Weisman
-	Contact: hi@hawkweisman.me
-	Twitter: @FakeHawkWeisman
-	From: Pennsylvania, USA
+Lead Backend Developer: Hawk Weisman
+Contact: hi@hawkweisman.me
+Twitter: @FakeHawkWeisman
+From: Pennsylvania, USA
 
 /* THANKS */
 
 
 /* SITE */
-	Language: English
-	Doctype: HTML5
-	Software: Atom, SublimeText, Sass, Bower
+Language: English
+Doctype: HTML5
+Software: Atom, SublimeText, Sass, Bower

@@ -1,20 +1,23 @@
 /* TEAM */
-Lead Frontend Developer: Harry Grillo
-Contact: harry@redbassett.com
-Twitter: @redbassett
-From: Maine, USA
 
-Lead Backend Developer: Hawk Weisman
-Contact: hi@hawkweisman.me
-Twitter: @FakeHawkWeisman
-From: Pennsylvania, USA
+	Lead Frontend Developer: Harry Grillo
+	Contact: harry@redbassett.com
+	Twitter: @redbassett
+	From: Maine, USA
+
+	Lead Backend Developer: Hawk Weisman
+	Contact: hi@hawkweisman.me
+	Twitter: @FakeHawkWeisman
+	From: Pennsylvania, USA
 
 /* THANKS */
-Name: Catherine LeBlanc
+
+	Inspiration: Catherine LeBlanc
 
 /* SITE */
-Language: English
-Standards: HTML5, CSS3
-Doctype: HTML5
-Components: Polymer
-Software: Atom, SublimeText, Sass, Bower, CoffeeScript
+
+	Language: English
+	Standards: HTML5, CSS3
+	Doctype: HTML5
+	Components: Polymer
+	Software: Atom, SublimeText, Sass, Bower, CoffeeScript

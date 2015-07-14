@@ -18,11 +18,12 @@ $table-border-color: lighten($black, 87%);
 table {
     width: 100%;
     display: table;
-    border-collapse: collapse; 
+    border-collapse: collapse;
 }
 
 td, th{
-  padding: 10px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: table-cell;
   text-align: left
 }

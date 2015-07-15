@@ -53,6 +53,29 @@ body {
      -ms-text-size-adjust: 100%;
  }
 
+.paper-header {
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    padding: 0 10px;
+    transition: height 0.2s;
+ }
+
+.paper-header.tall {
+    height: 120px;
+}
+
+.paper-header.medium-tall {
+    height: 100px;
+    line-height: 50px;
+}
+
+.cyan {
+    background-color: $material-cyan;
+    color: $white;
+}
+
+
 paper-header-panel {
 	paper-toolbar {
 		paper-tabs {

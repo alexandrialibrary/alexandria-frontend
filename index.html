@@ -10,6 +10,8 @@
 		<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
 		<link rel="import" href="bower_components/iron-pages/iron-pages.html">
 		<link rel="import" href="bower_components/paper-material/paper-material.html">
+		<link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+		<link rel="import" href="bower_components/paper-styles/paper-styles.html">
 		<link rel="import" href="components/book-list.html">
 		<!-- Roboto font family as per Katerial Design guidelines -->
 		<link href="http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
@@ -17,24 +19,23 @@
 		<script src="js/alexandria.js"></script>
 		<title>Alexandria</title>
 	</head>
-	<body class="fullbleed" unresolved>
-		<paper-header-panel class="flex">
-			<core-toolbar>
-				<paper-tabs selected="0" style="text-transform: uppercase;">
-					<paper-tab>Home</paper-tab>
-					<paper-tab>Catalogue</paper-tab>
-				  	<paper-tab>Checkout</paper-tab>
-				</paper-tabs>
-			</core-toolbar>
-			<div class="content" flex>
-				<paper-material>
-					<a name = "catalogue" />
-					<div horizontal layout style="width:500px;margin-left: auto;margin-right: auto;">
-						<div flex>
-							<book-list></book-list>
-						</div>
+	<body class="fullbleed vertical layout">
+		<paper-header-panel>
+			<paper-tabs selected="0" style="text-transform: uppercase;">
+				<paper-tab>Home</paper-tab>
+				<paper-tab>Catalogue</paper-tab>
+			  	<paper-tab>Checkout</paper-tab>
+			</paper-tabs>
+			<div class="container" style="height:500px;width:500px;margin-left:auto;margin-right:auto;">
+				<paper-header-panel mode="waterfall">
+ 					<div class="paper-header cyan">
+						<a name="#catalogue" />
+						Catalogue
 					</div>
-				</paper-material>
+					<divclass="content">
+						<book-list></book-list>
+					</div>
+  				</paper-header-panel>
 			</div>
 		</paper-header-panel>
 	</body>

@@ -24,4 +24,6 @@ gulp.task('watch', function(){
 	gulp.watch('coffee/*.coffee', ['coffee']);
 });
 
+gulp.task('watch-serve', ['watch', 'serve'])
+
 gulp.task('default', ['sass', 'coffee']);

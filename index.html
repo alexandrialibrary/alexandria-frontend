@@ -26,17 +26,19 @@
 				<paper-tab>Catalogue</paper-tab>
 			  	<paper-tab>Checkout</paper-tab>
 			</paper-tabs>
-			<div class="container" style="height:500px;width:500px;margin-left:auto;margin-right:auto;">
-				<paper-header-panel mode="waterfall">
- 					<div class="paper-header cyan">
-						<a name="#catalogue" />
-						Catalogue
+				<paper-material style="width:500px;margin-left:auto;margin-right:auto;margin-top:10px">
+					<div class="container" style="height:500px;">
+						<paper-header-panel mode="waterfall">
+		 					<div class="paper-header cyan">
+								<a name="#catalogue"/>
+								Catalogue
+							</div>
+							<div style="margin:5px">
+								<book-list></book-list>
+							</div>
+		  				</paper-header-panel>
 					</div>
-					<divclass="content">
-						<book-list></book-list>
-					</div>
-  				</paper-header-panel>
-			</div>
+				</paper-material>
 		</paper-header-panel>
 	</body>
 </html>

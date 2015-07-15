@@ -1,0 +1,27 @@
+{
+  "name": "alexandria-frontend",
+  "version": "0.0.1",
+  "description": "This is a test repo that may potentially be the frontend of [Alexandria](https://github.com/alexandrialibrary/Alexandria).",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-coffee": "^2.3.1",
+    "gulp-sass": "^2.0.3",
+    "gulp-util": "^3.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrialibrary/alexandria-frontend.git"
+  },
+  "author": "Harry Grillo <harry@redbassett.com>, Hawk Weisman <hi@hawkweisman.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexandrialibrary/alexandria-frontend/issues"
+  },
+  "homepage": "https://github.com/alexandrialibrary/alexandria-frontend#readme"
+}

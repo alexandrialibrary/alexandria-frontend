@@ -6,11 +6,17 @@ bower_components
 .bower-registry
 .bower-tmp
 
+### NPM ###
+node_modules
+
 
 ### Sass ###
 .sass-cache
 *.css.map
 css
+
+### Coffeescript ###
+js
 
 
 ### SublimeText ###

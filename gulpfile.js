@@ -1,8 +1,11 @@
 var gulp = require('gulp');
 
+var serve = require('gulp-serve')
 var sass = require('gulp-sass');
 var coffee = require('gulp-coffee');
 var gutil = require('gulp-util');
+
+gulp.task('serve', ['coffee', 'sass'], serve('.'));
 
 gulp.task('sass', function(){
 	return gulp.src('scss/*.scss')

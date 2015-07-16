@@ -3,7 +3,22 @@ var gulp = require('gulp');
 var serve = require('gulp-serve')
 var sass = require('gulp-sass');
 var coffee = require('gulp-coffee');
+var vulcanize = require('gulp-vulcanize');
 var gutil = require('gulp-util');
+
+gulp.task('vulcanize', function () {
+	    return gulp.src('../src/index.html')
+	        .pipe(vulcanize({
+				dest: '../build',
+	            abspath: '',
+	            excludes: [],
+	            stripExcludes: false,
+		        stripComments: true
+	        }))
+    		.on("error", gutil.log)
+	        .pipe(gulp.dest('build'))
+		}
+	);
 
 gulp.task('serve', ['coffee', 'sass'], serve('.'));
 

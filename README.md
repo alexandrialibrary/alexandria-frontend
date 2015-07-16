@@ -23,7 +23,7 @@ This will make the project available at [`http://localhost:3000/index.html`](htt
 [Gulp](http://gulpjs.com/) will automatically compile all of the SASS and Coffeescript to CSS and Javascript when files are modified.
 
 ```shell
-$ npm install -g gulp
+$ sudo npm install -g gulp
 $ npm install
 ```
 Once Gulp is installed, run `gulp watch`. Gulp will now watch for changes. This only has to be done once.

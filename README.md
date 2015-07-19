@@ -18,3 +18,12 @@ $ npm install -g simple-server
 $ simple-server ./ 3000
 ```
 This will make the project available at [`http://localhost:3000/index.html`](http://localhost:3000/index.html).
+
+##Gulp
+[Gulp](http://gulpjs.com/) will automatically compile all of the SASS and Coffeescript to CSS and Javascript when files are modified.
+
+```shell
+$ sudo npm install -g gulp
+$ npm install
+```
+Once Gulp is installed, run `gulp watch`. Gulp will now watch for changes. This only has to be done once.

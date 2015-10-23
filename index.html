@@ -2,9 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+		<!--<script src="bower_components/webcomponentsjs/webcomponents.js"></script>-->
+		<link rel="import" href="bower_components/polymer/polymer.html">
 		<link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
 		<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
 		<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
@@ -12,34 +13,28 @@
 		<link rel="import" href="bower_components/paper-material/paper-material.html">
 		<link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 		<link rel="import" href="bower_components/paper-styles/paper-styles.html">
+		<link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
+		<link rel="import" href="bower_components/iron-icons/iron-icons.html">
 		<link rel="import" href="components/book-list.html">
 		<!-- Roboto font family as per Katerial Design guidelines -->
-		<link href="http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="css/alexandria.css">
-		<script src="js/alexandria.js"></script>
+		<!-- <link href="http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css"> -->
+		<!-- <link rel="stylesheet" href="css/alexandria.css"> -->
+		<!--<script src="js/alexandria.js"></script>-->
 		<link rel="author" href="humans.txt">
 		<title>Alexandria</title>
 	</head>
-	<body class="fullbleed vertical layout">
-		<paper-header-panel>
-			<paper-tabs selected="0" style="text-transform: uppercase;">
-				<paper-tab>Home</paper-tab>
-				<paper-tab>Catalogue</paper-tab>
-			  	<paper-tab>Checkout</paper-tab>
-			</paper-tabs>
-				<paper-material style="width:500px;margin-left:auto;margin-right:auto;margin-top:10px">
-					<div class="container" style="height:500px;">
-						<paper-header-panel mode="waterfall">
-		 					<div class="paper-header cyan">
-								<a name="#catalogue"/>
-								Catalogue
-							</div>
-							<div style="margin:5px">
-								<book-list></book-list>
-							</div>
-		  				</paper-header-panel>
-					</div>
-				</paper-material>
-		</paper-header-panel>
+	<body class="fullbleed">
+		<paper-drawer-panel>
+			<paper-header-panel drawer>
+				<paper-toolbar><div class="flex">Menu</div></paper-toolbar>
+
+			</paper-header-panel>
+			<paper-header-panel main>
+				<paper-toolbar>
+					<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+					<div class="flex">My App</div>
+				</paper-toolbar>
+			</paper-header-panel>
+		</paper-drawer-panel>
 	</body>
 </html>
